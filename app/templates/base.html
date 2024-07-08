@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title%}
+    <title>{{ title }} - Microbog</title>
+    {% else %}
+    <title>Welcome to microblog!</title>
+    {% endif %}
+</head>
+<body>
+    Microbog: <a href="/index">Home</a>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
